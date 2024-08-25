@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Enhancements.Misc;
 
+
 namespace Enhancements.Breaktime
 {
     public class BreaktimeLoader : IDisposable
@@ -19,10 +20,10 @@ namespace Enhancements.Breaktime
 
         private readonly BreaktimeSettings _settings;
         private readonly AudioClipAsyncLoader _audioClipAsyncLoader;
-        private readonly CachedMediaAsyncLoader _cachedMediaAsyncLoader;
+        private readonly SpriteAsyncLoader _cachedMediaAsyncLoader;
         private readonly CancellationTokenSource _cancellationTokenSource;
 
-        public BreaktimeLoader(BreaktimeSettings settings, AudioClipAsyncLoader audioClipAsyncLoader, CachedMediaAsyncLoader cachedMediaAsyncLoader)
+        public BreaktimeLoader(BreaktimeSettings settings, AudioClipAsyncLoader audioClipAsyncLoader, SpriteAsyncLoader cachedMediaAsyncLoader)
         {
             _settings = settings;
             _audioClipAsyncLoader = audioClipAsyncLoader;
